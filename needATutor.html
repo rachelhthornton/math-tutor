@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Tutor - Rachel Thornton</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS to style the sections -->
+    <style>
+        .section-box {
+            background-color: #f0fff0; /* Light blue background */
+            border-radius: 50px; /* Rounded corners */
+            padding: 15px 0px; /* Reduced padding to make the box hug the text */
+            margin-bottom: 20px;
+            border: 3px solid #e6f4e1; /* Optional border for more contrast */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section with QR Code Link -->
+    <section class="container text-center my-5 section-box">
+        <h1 class="display-4">Need a math tutor?</h1>
+        <h2 class="lead">You're in the right place!</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- Inline email link to copy -->
+                <p>To get in contact, copy my <a href="#" id="email-link" onclick="copyEmail()">email address</a></p>
+                <script>
+                function copyEmail() {
+                    var email = "rachelthornton@alum.lehigh.edu";
+                    var textarea = document.createElement('textarea');
+                    textarea.value = email;
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textarea);
+                    alert("Email copied to clipboard!");
+                }
+                </script> 
+            </div>
+        </div>
+    </section>
+    <!-- Qualifications Section -->
+    <section class="container my-5 section-box">
+        <h2 class="font-weight-bold mb-4 text-center">An Experienced Educator</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <p style="max-width: 500px; margin: 0 auto; text-indent: 30px;">
+                    I've been a private tutor for levels 6-12 and college students for 5 years, starting work while completing my undergraduate math degree from the University of Texas at Austin and continuing work through and beyond my time earning a Master's degree at Lehigh University. I have two years additional experience as a teaching assistant at Lehigh for multiple different undergraduate calculus courses. This means I'm an experienced educator, I know what your professors are looking for, the common mistakes students make and the exam content that they'll forget to study, and I know how to teach to lots of different levels!
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <!-- Professional photo (bigger and keeps original ratio) -->
+                <img src="professional.JPG" alt="Rachel Thornton" class="img-fluid" style="max-width: 250px; border-radius: 30px;">
+                <!-- LinkedIn button -->
+                <a href="https://www.linkedin.com/in/rachelhthornton/" class="btn btn-primary mt-3">Visit my LinkedIn</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Teaching Approach Section -->
+    <section class="container my-5 section-box">
+        <h2 class="font-weight-bold mb-4 text-center">My Teaching Approach:</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <p style="max-width: 800px; margin: 1 auto; text-indent: 30px;">
+                    I'm passionate about working with students who have developed a strained relationship with math. My goal throughout our meetings is to press back against the math fear and restore student confidence. In practice, this means I emphasize a student's goals as hard work and personal improvement. You can expect that I bring my enthusiastic love of mathematics to the meetings, which is often contagious and engaging. You can also expect that I teach to different learning styles and meet students at whatever level they are, strongly encouraging questions as they come up.
+                </p>
+                <p style="max-width: 800px; margin: 1 auto; text-indent: 30px;">
+                    As meetings continue, I will develop a sense of the student's needs, taking into account their personal concerns as well as things they might not know to fix. This includes providing the math background they're missing, updating study strategies that would work better for their learning style, and bringing their attention to the sections they perform inconsistently on to prioritize time spent studying. When students excel at a particular topic, I will sprinkle in advanced questions on the subject so they are engaged and able to grow as a student, <i>and</i> we'll still get through required materials.
+                </p>
+                <p style="max-width: 800px; margin: 1 auto; text-indent: 30px;">
+                    It's an ambitious dream, but I want to bring joy back into mathematics!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container my-5 section-box">
+        <h2 class="font-weight-bold mb-4 text-center">Services:</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <h2 style="font-size: 1rem; margin-bottom: 0;"><strong>Remote, In-Person, Duration, Frequency, One-on-One, Pairs and Rate</strong></h2>
+                <p style="max-width: 800px; margin: 1 auto; text-indent: 0px;">
+                    I offer both remote and in-person tutoring (for Chapel Hill and Durham) at a rate of $50/hour. We can schedule meetings as short as 30 minutes or as long as 2 hours at a time. They can happen regularly, once or twice a week, or spontaneously (like during exam week). Tutoring can be done one-on-one or in pairs for students who are enrolled in the same course and want to share the cost. The total rate for a pair of students is the same, $50/hour, which can be split however they desire.
+                </p>
+                <h2 style="font-size: 1rem; margin-bottom: 0;"><strong>Included Services</strong></h2>
+                <p style="max-width: 800px; margin: 1 auto; text-indent: 0px;">
+                    For middle and high school students, I'll take time to debrief parents about student progress after meetings, and for remote meetings I'll put all that information in an email. For all students, my hours are more flexible during exam weeks, with remote meetings starting as late as 8PM. All students are also given/allowed to have my contact information (email and phone), for the purposes of scheduling, sending me short math questions, or me sending them links for additional resources outside of regular meetings. The information I provide for parents, the flexibility of my hours, and my availability for student emails and texts outside the meetings are not an extra expense. 
+                </p>
+                <h2 style="font-size: 1rem; margin-bottom: 0;"><strong>Considerations when Scheduling</strong></h2>
+                <p style="max-width: 800px; margin: 1 auto; text-indent: 0px;">
+                    While remote tutoring is convenient, you should not request remote meetings unless you have access to a tablet and have the ability to screenshare! Meetings can happen any day of the week, including weekends within the 10AM-5PM EST window. College students requesting in-person meetings should plan to meet in a university study space. Students should feel welcome to email or text me with math emergencies, but depending on the size of the question, the frequency of emails, or the time the email is sent, I may have a delayed reply or suggest a brief meeting in place of a typed answer. 
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scheduling and Payments Section -->
+    <section class="container my-5 section-box">
+        <h2 class="font-weight-bold mb-4 text-center">Scheduling, Payments, and Cancellations:</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-9">
+                <p style="max-width: 800px; margin: 1 auto; text-indent: 30px;">
+                    To get started, send me an email by copying <a href="#" id="email-link" onclick="copyEmail()">this address</a>. Let me know who you're reaching out for, the math being learned, the meeting style, and the number of students. Please include student(s) availability/preferred times, especially if you are reaching out as a pair! 
+                </p>
+                <p style="max-width: 800px; margin: 1 auto; text-indent: 30px;">
+                    Payments should be made after each meeting, and depending on how long you've been a student, future meetings may have to be rescheduled if payments are overdue. Same-day scheduling is available, and I often make it work (particularly for remote meetings). For cancellations, including rescheduling, notify me by 9PM EST the night before. I need time to plan my day! Cancellations made after 9PM EST the night before will still owe the allotted time's pay, and rescheduling will be delayed until the cancellation fee is paid.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Reasons You Might Need a Tutor Section -->
+    <!--
+    <section class="container my-5">
+        <h2 class="font-weight-bold mb-4 text-center">Reasons You Might Need a Tutor:</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <ol >
+                    <li>You're working really hard and not seeing results on your own.</li>
+                    <li>You think you'd benefit from having a tutor to hold you accountable for your homework and studies (particularly if homework is not submitted, but is "suggested" in a college course).</li>
+                    <li>You think you understand the material, but keep losing points for algebraic errors and don't understand what background you need.</li>
+                    <li>You're not currently enrolled in a math course but need to keep the math you've already been taught fresh, and you would like me to make a mini lecture series to help you review the essentials (this was a pretty niche request but very doable).</li>
+                    <li>You're really lost in class, and watching bizarre, nonsensical math happen on the board fills you with a genuine, crippling dread and attacks your self-worth (not to be dark but that feeling is terrible and we can talk about that too).</li>
+                    <li>You're not challenged in math and it's a boring subject.</li>
+                    <li>You don't have access to additional resources, are not comfortable asking questions in class, or find that the available resources/answers are lacking.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Footer Section -->
+    <footer class="container text-center py-4">
+        <p>&copy; 2024 Rachel Thornton. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
